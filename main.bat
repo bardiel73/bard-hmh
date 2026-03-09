@@ -9,6 +9,6 @@ set RELEASE=-O2 -s
 
 set CFLAGS= -Wall -Wextra %RELEASE%
 set LFLAGS=  -lntdll -lkernel32 -luser32 -lgdi32 -lucrt
-rem -lucrt for: strlen
+rem -lucrt for: strlen, memset,memcpy,memmove,memcmp
 @echo on
 gcc %BOILERPLATE% %CFLAGS% -o main.exe main.c %LFLAGS% && .\main.exe

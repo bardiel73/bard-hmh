@@ -1,4 +1,3 @@
-#include "nocrt.h" // IWYU pragma: keep
 #include <windows.h> // IWYU pragma: keep
 
 // Halal c includes
