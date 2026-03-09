@@ -64,7 +64,7 @@ void entry_point() {
     init_layer_win32();
 
     MessageBox(0, "basically a game now", "ship it", MB_OK);
-
+    #error "https://youtu.be/4ROiWonnWGk?t=195"
 
     ExitProcess(0);
 }
