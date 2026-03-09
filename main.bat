@@ -8,7 +8,7 @@ set DEBUG=-Og -gdwarf-5 -gstrict-dwarf -g3
 set RELEASE=-O2 -s
 
 set CFLAGS= -Wall -Wextra %RELEASE%
-set LFLAGS=  -lntdll -lkernel32 -luser32 -lgdi32 -lucrt
-
+set LFLAGS=  -lntdll -lkernel32 -luser32 -lgdi32
+rem set LFLAGS=  -lntdll -lkernel32 -luser32 -lgdi32 -lucrt // might want to link with ucrt, per martins
 @echo on
 gcc %BOILERPLATE% %CFLAGS% -o main.exe main.c %LFLAGS% && .\main.exe

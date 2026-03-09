@@ -4,6 +4,5 @@
 __attribute((force_align_arg_pointer, used, noreturn))
 void entry_point() {
 
-
     ExitProcess(0);
 }
