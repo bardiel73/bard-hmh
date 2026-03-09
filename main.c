@@ -21,11 +21,13 @@ static LRESULT CALLBACK WindowProc(HWND wnd, UINT msg, WPARAM wparam, LPARAM lpa
         case WM_CLOSE: { // user attempted to close the window
             // DestroyWindow(hwnd);
             PostQuitMessage(0);
+            return 0;
         } break;
 
         case WM_DESTROY: { // the closed window's resources are getting released
             // thread is quiting (sends WM_QUIT, not handled by windproc, used to exit the inf loop in main)
             PostQuitMessage(0);
+            return 0;
         } break;
 	}
 	return DefWindowProcW(wnd, msg, wparam, lparam);
